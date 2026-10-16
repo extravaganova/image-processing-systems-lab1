@@ -51,13 +51,13 @@ $$
 Направление вектора градиента (нормаль к направлению границы):
 
 $$
-\theta(x, y) = \operatorname{arctan2}\left(G_y(x, y), G_x(x, y)\right)
+\theta(x, y) = \mathrm{atan2}\left(G_y(x, y), G_x(x, y)\right)
 $$
 
 Для формирования итогового 8-битного полутонового изображения величина градиента ограничивается диапазоном $[0, 255]$:
 
 $$
-I_{\text{out}}(x, y) = \min(255, \operatorname{round}(G(x, y)))
+I_{\text{out}}(x, y) = \min(255, \mathrm{round}(G(x, y)))
 $$
 
 ---
